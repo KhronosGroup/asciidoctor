@@ -1,0 +1,13 @@
+= Khronos Stylesheet Fork of Asciidoctor
+
+Khronos maintains a custom stylesheet for use with some of its
+specifications, based on the asciidoctor default stylesheet.
+
+To help track changes in the upstream, Khronos has forked the asciidoctor
+repository into https://github.com/KhronosGroup/asciidoctor .
+
+The `main` branch of this repository tracks the asciidoctor upstream, while
+the Khronos stylesheet is located in the `khronos` branch.
+
+See link:src/stylesheets/README.adoc for more information and build
+instructions.

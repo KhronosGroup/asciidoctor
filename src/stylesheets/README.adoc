@@ -2,6 +2,16 @@
 
 This directory contains the source and build for the default stylesheet used by the built-in HTML converter.
 
+It also includes the Khronos default stylesheet used for the Vulkan Specification, `khronos2.css`.
+This is based on `asciidoctor.css` with changes for:
+
+  * Looking more like the old `colony` asciidoctor theme
+  * Accessibility improvements recommended by the ANDI tool
+  * Additional Khronos-specific changes for Valid Usage statements
+
+The original `asciidoctor.css` and `coderay-asciidoctor.css` are retained as
+reference points in case the upstream CSS evolves further in the future.
+
 == Overview
 
 The stylesheet is written in plain CSS.
@@ -9,7 +19,7 @@ The build minifies the stylesheet using PostCSS + cssnano and writes it to the d
 
 == Usage
 
-To regenerate the default stylesheet, first install the npm packages using the `npm` command:
+To regenerate the Khronos stylesheet, first install the npm packages using the `npm` command:
 
  $ npm i
 
@@ -18,6 +28,7 @@ Next, run the npm script named `build`:
  $ npm run build
 
 If there are any changes to the [.path]_data/stylesheets/asciidoctor-default.css_ file, commit this file.
+Then copy it to the Vulkan specification repository under config/khronos2.css and check it in there.
 
 To validate the syntax of the CSS source, run the npm script named `lint`:
 
