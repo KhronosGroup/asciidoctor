@@ -27,8 +27,8 @@ Next, run the npm script named `build`:
 
  $ npm run build
 
-If there are any changes to the [.path]_data/stylesheets/asciidoctor-default.css_ file, commit this file.
-Then copy it to the Vulkan specification repository under config/khronos2.css and check it in there.
+If there are any changes to the [.path]_data/stylesheets/khronos2.css_ file, commit this file.
+Then copy it to the Vulkan specification repository under `config/khronos2.css` and check it in there.
 
 To validate the syntax of the CSS source, run the npm script named `lint`:
 

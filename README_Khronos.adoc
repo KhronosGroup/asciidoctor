@@ -9,5 +9,5 @@ repository into https://github.com/KhronosGroup/asciidoctor .
 The `main` branch of this repository tracks the asciidoctor upstream, while
 the Khronos stylesheet is located in the `khronos` branch.
 
-See link:src/stylesheets/README.adoc for more information and build
-instructions.
+See link:src/stylesheets/README.adoc[src/stylesheets/README.adoc] for more
+information and build instructions.
