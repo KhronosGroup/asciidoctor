@@ -278,6 +278,7 @@ h1,
 h2,
 h3,
 #toctitle,
+.sidebarblock > details > .title,
 .sidebarblock > .content > .title,
 h4,
 h5,
@@ -297,6 +298,7 @@ h1 small,
 h2 small,
 h3 small,
 #toctitle small,
+.sidebarblock > details > .title small,
 .sidebarblock > .content > .title small,
 h4 small,
 h5 small,
@@ -316,6 +318,7 @@ h2 {
 
 h3,
 #toctitle,
+.sidebarblock > details > .title,
 .sidebarblock > .content > .title {
   font-size: 1.375em;
 }
@@ -410,6 +413,7 @@ blockquote p {
 
   h3,
   #toctitle,
+  .sidebarblock > details > .title,
   .sidebarblock > .content > .title {
     font-size: 1.6875em;
   }
@@ -470,6 +474,7 @@ h1 strong,
 h2 strong,
 h3 strong,
 #toctitle strong,
+.sidebarblock > details > .title strong,
 .sidebarblock > .content > .title strong,
 h4 strong,
 h5 strong,
@@ -887,6 +892,7 @@ body > div[id]::after,
 h2 > a.anchor,
 h3 > a.anchor,
 #toctitle > a.anchor,
+.sidebarblock > details > .title > a.anchor,
 .sidebarblock > .content > .title > a.anchor,
 h4 > a.anchor,
 h5 > a.anchor,
@@ -906,6 +912,7 @@ h6 > a.anchor {
 h2 > a.anchor::before,
 h3 > a.anchor::before,
 #toctitle > a.anchor::before,
+.sidebarblock > details > .title > a.anchor::before,
 .sidebarblock > .content > .title > a.anchor::before,
 h4 > a.anchor::before,
 h5 > a.anchor::before,
@@ -922,9 +929,11 @@ h2:hover > a.anchor,
 h2 > a.anchor:hover,
 h3:hover > a.anchor,
 #toctitle:hover > a.anchor,
+.sidebarblock > details > .title:hover > a.anchor,
 .sidebarblock > .content > .title:hover > a.anchor,
 h3 > a.anchor:hover,
 #toctitle > a.anchor:hover,
+.sidebarblock > details > .title > a.anchor:hover,
 .sidebarblock > .content > .title > a.anchor:hover,
 h4:hover > a.anchor,
 h4 > a.anchor:hover,
@@ -939,6 +948,7 @@ h6 > a.anchor:hover {
 h2 > a.link,
 h3 > a.link,
 #toctitle > a.link,
+.sidebarblock > details > .title > a.link,
 .sidebarblock > .content > .title > a.link,
 h4 > a.link,
 h5 > a.link,
@@ -951,6 +961,7 @@ h6 > a.link {
 h2 > a.link:hover,
 h3 > a.link:hover,
 #toctitle > a.link:hover,
+.sidebarblock > details > .title > a.link:hover,
 .sidebarblock > .content > .title > a.link:hover,
 h4 > a.link:hover,
 h5 > a.link:hover,
@@ -974,7 +985,7 @@ details {
 
 details > summary {
   cursor: pointer;
-  display: list-item;
+  display: block;
   position: relative;
   line-height: 1.6;
   margin-bottom: 0.75em;
@@ -1101,6 +1112,7 @@ table.tableblock.fit-content > caption.title {
   border-radius: 0;
 }
 
+.sidebarblock > details > .title,
 .sidebarblock > .content > .title {
   color: black;
   margin-top: 0;
@@ -2154,6 +2166,7 @@ p.tableblock {
   h2,
   h3,
   #toctitle,
+  .sidebarblock > details > .title,
   .sidebarblock > .content > .title {
     break-after: avoid;
   }

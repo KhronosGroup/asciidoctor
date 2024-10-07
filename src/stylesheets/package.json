@@ -11,6 +11,7 @@
   },
   "scripts": {
     "build": "postcss khronos2.css -o ../../data/stylesheets/khronos2.css",
+    "build-all": "postcss khronos2.css -o ../../data/stylesheets/khronos2.css && postcss asciidoctor.css -o ../../data/stylesheets/asciidoctor-default.css && postcss coderay-asciidoctor.css -o ../../data/stylesheets/coderay-asciidoctor.css",
     "lint": "stylelint *.css"
   },
   "browserslist": [
